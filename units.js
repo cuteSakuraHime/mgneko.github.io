@@ -187,7 +187,7 @@
 				if(!units[i][j].npLv){
 					fillRect(j, i, mask);
 				}else{
-					fillNPText(j, i, "寶" + units[i][j].npLv, font_color);
+					fillNPText(j, i, "宝" + units[i][j].npLv, font_color);
 				}
 				if(units[i][j].mark){
 					drawImage(j + 1, i, markImages[units[i][j].mark - 1]);
@@ -386,7 +386,7 @@
 							units[category][attribute - 1].mark && drawImage(attribute , category, markImages[units[category][attribute - 1].mark - 1]);
 						}
 						else{
-							fillNPText(attribute - 1, category, "寶" + units[category][attribute - 1].npLv, font_color);
+							fillNPText(attribute - 1, category, "宝" + units[category][attribute - 1].npLv, font_color);
 						}
 					}
 					else{
@@ -394,7 +394,7 @@
 						drawImage(attribute , category, units[category][attribute - 1].image);
 						units[category][attribute - 1].mark && drawImage(attribute , category, markImages[units[category][attribute - 1].mark - 1]);
 						fillTextMask(attribute, category, bgcolor);
-						fillNPText(attribute - 1, category, "寶" + units[category][attribute - 1].npLv, font_color);
+						fillNPText(attribute - 1, category, "宝" + units[category][attribute - 1].npLv, font_color);
 					}
 					fillTotalText();
 					if(luckyBag){
@@ -446,14 +446,14 @@
 					if(units[category][attribute - 1].npLv < 5){
 						units[category][attribute - 1].npLv += 1;
 						fillTextMask(attribute, category, bgcolor);
-						fillNPText(attribute - 1, category, "寶" + units[category][attribute - 1].npLv, font_color);
+						fillNPText(attribute - 1, category, "宝" + units[category][attribute - 1].npLv, font_color);
 					}
 					else{
 						units[category][attribute - 1].npLv = 0;
 						fillRect(attribute - 1, category, mask);
 						units[category][attribute - 1].mark && drawImage(attribute , category, markImages[units[category][attribute - 1].mark - 1]);
 						fillTextMask(attribute, category, bgcolor);
-						//fillText(attribute - 1, category, "寶" + units[category][attribute - 1].npLv, font_color);
+						//fillText(attribute - 1, category, "宝" + units[category][attribute - 1].npLv, font_color);
 					}
 					fillTotalText();
 					if(luckyBag){

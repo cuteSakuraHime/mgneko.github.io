@@ -338,14 +338,17 @@
 		var percent =(totalHave/total) * 100;
 
 		context.fillStyle = font_color;
+		context.fillText("前往 fgo.2cy.net 生成截图",
+			canvas.width - 250,
+			canvas.height - 90);
 		context.fillText("英灵持有数:"+ totalHave + "/" + total,
-			canvas.width - 200,
+			canvas.width - 250,
 			canvas.height - 70);
 		context.fillText("英灵持有率:" + percent.toFixed(2) + "%",
-			canvas.width - 200,
+			canvas.width - 250,
 			canvas.height - 50);
 		context.fillText("SSR总张数:" + totalNP,
-			canvas.width - 200,
+			canvas.width - 250,
 			canvas.height - 30);
 	}
 
